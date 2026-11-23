@@ -12,12 +12,12 @@ int main(){
         scanf("%d", &marks[i]);
         sum += marks[i];
     }
-    
+
     float average;
     average = (float)sum/n;
     int highest = -1;
     int second_highest = -1;
-    
+
     for(int i=0; i<n; i++){
         if(marks[i]>highest){
             second_highest = highest;
@@ -26,10 +26,10 @@ int main(){
             second_highest = marks[i];
         }
     }
-    
+
     int above=0;
     for(int i=0; i<n; i++){
-        if(marks[i]>averege){
+        if(marks[i]>average){
             above++;
         }
     }
