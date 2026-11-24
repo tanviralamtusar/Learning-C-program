@@ -10,7 +10,7 @@ int main(){
     printf("Enter the marks of %d students:\n", n);
     for(int i=0; i<n ; i++ ){
         scanf("%d", &marks[i]);
-        sum += marks[i];
+        sum = sum + marks[i];
     }
 
     float average;
