@@ -19,7 +19,7 @@ int isPalindrome(int n) {
     while (n > 0) {
         int digit = n % 10;
         reversed = (reversed * 10) + digit;
-        n /= 10;
+        n= n/10;
     }
 
     return (reversed == original);
@@ -30,9 +30,9 @@ int sumEvenDigits(int n) {
     while (n > 0) {
         int digit = n % 10;
         if (digit % 2 == 0) {
-            sum += digit;
+            sum = sum +digit;
         }
-        n /= 10;
+        n= n/10;
     }
     return sum;
 }
@@ -42,9 +42,9 @@ int sumOddDigits(int n) {
     while (n > 0) {
         int digit = n % 10;
         if (digit % 2 != 0) {
-            sum += digit;
+            sum =sum + digit;
         }
-        n /= 10;
+        n= n/10;
     }
     return sum;
 }
@@ -57,7 +57,7 @@ int isArmstrong(int n) {
 
     while (temp > 0) {
         digits++;
-        temp /= 10;
+        temp = temp /10;
     }
 
     temp = n;
@@ -65,10 +65,10 @@ int isArmstrong(int n) {
         int digit = temp % 10;
         int power = 1;
         for (int i = 0; i < digits; i++) {
-            power *= digit;
+            power = power *digit;
         }
-        sum += power;
-        temp /= 10;
+        sum = sum +power;
+        temp = temp /10;
     }
 
     return (sum == original);
