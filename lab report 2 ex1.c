@@ -42,7 +42,7 @@ int main(){
         printf("Second-Highest Mark: %d\n", second_highest);
     }
     printf("Number of students above average: %d\n", above);
-    printf("Marks below average (in reverse order): ");
+    printf("Marks below average in reverse order: ");
     for (int i = n - 1; i >= 0; i--) {
         if (marks[i] < average) {
             printf("%d ", marks[i]);
